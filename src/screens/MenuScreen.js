@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 
 import InfoCard from '../components/InfoCard';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const MenuScreen = ({}) => {
+const MenuScreen = ({ navigation }) => {
+  const pressHandler = () => {
+    navigation.navigate('Details', {});
+  };
   return (
     <ScrollView>
       <View style={styles.container}>
-        <InfoCard />
+        <TouchableOpacity onPress={pressHandler}>
+          <InfoCard />
+        </TouchableOpacity>
         <InfoCard />
         <InfoCard />
         <InfoCard />
