@@ -1,21 +1,22 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
 
 import ChoiceCard from '../components/ChoiceCard';
 
 const ChoiceList = () => {
   return (
-    <View style={styles.container}>
-      <View>
+    <FlatList horizontal>
+      {/* <View>
         <Text style={styles.header}>Sizes</Text>
-      </View>
+      </View> */}
       <View style={styles.choices}>
         <ChoiceCard />
         <ChoiceCard />
         <ChoiceCard />
       </View>
-    </View>
+      {/* </View> */}
+    </FlatList>
   );
 };
 
