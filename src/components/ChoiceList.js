@@ -3,6 +3,7 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
 
 import ChoiceCard from '../components/ChoiceCard';
+import InfoCard from './InfoCard';
 
 const ChoiceList = () => {
   return (
@@ -11,9 +12,7 @@ const ChoiceList = () => {
         <Text style={styles.header}>Sizes</Text>
       </View> */}
       <View style={styles.choices}>
-        <ChoiceCard />
-        <ChoiceCard />
-        <ChoiceCard />
+        <InfoCard />
       </View>
       {/* </View> */}
     </FlatList>

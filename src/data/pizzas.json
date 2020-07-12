@@ -1,52 +1,366 @@
-{
-  "id": "1",
-  "name": "Pepperoni",
-  "imgSmall": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2Frecipes%2Fck%2Fgluten-free-cookbook%2Fpepperoni-pizza-ck-x.jpg",
-  "imgBig": "https://www.seriouseats.com/recipes/images/2016/05/20160503-spicy-spring-pizza-recipe-37.jpg",
-  "sizes": [
-    {
-      "name": "Small",
-      "price": 15
-    },
-    {
-      "name": "Medium",
-      "price": 20
-    },
-    {
-      "name": "Large",
-      "price": 25
-    },
-    {
-      "name": "XLarge",
-      "price": 28
-    }
-  ],
-  "crust": [
-    {
-      "name": "Standard",
-      "price": 0
-    },
-    {
-      "name": "Garlic Bread",
-      "price": 0
-    },
-    {
-      "name": "Cheese Burst",
-      "price": 0
-    }
-  ],
-  "toppings": [
-    {
-      "name": "Standard",
-      "price": 0
-    },
-    {
-      "name": "Extra Cheese",
-      "price": 2
-    },
-    {
-      "name": "Extra Spice",
-      "price": 2
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Pepperoni",
+    "imgSmall": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2Frecipes%2Fck%2Fgluten-free-cookbook%2Fpepperoni-pizza-ck-x.jpg",
+    "imgBig": "https://www.seriouseats.com/recipes/images/2016/05/20160503-spicy-spring-pizza-recipe-37.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 16
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hawaiian Pizza",
+    "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
+    "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
+    "sizes": [
+      {
+        "name": "Small",
+        "price": 15
+      },
+      {
+        "name": "Medium",
+        "price": 20
+      },
+      {
+        "name": "Large",
+        "price": 25
+      },
+      {
+        "name": "XLarge",
+        "price": 28
+      }
+    ],
+    "crust": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Garlic Bread",
+        "price": 0
+      },
+      {
+        "name": "Cheese Burst",
+        "price": 0
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Standard",
+        "price": 0
+      },
+      {
+        "name": "Extra Cheese",
+        "price": 2
+      },
+      {
+        "name": "Extra Spice",
+        "price": 2
+      }
+    ]
+  }
+]

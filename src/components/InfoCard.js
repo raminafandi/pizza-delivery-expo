@@ -1,18 +1,13 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const InfoCard = (info) => {
+const InfoCard = ({ data }) => {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.img}
-        source={{
-          uri:
-            'https://pizzabruno.az/wp-content/uploads/2018/06/pizza-bruno-2-300x300.jpg',
-        }}
-      />
-      <Text style={styles.text}>Margarita</Text>
-      <Text style={styles.price}>Starts from 5 manat</Text>
+      <Image style={styles.img} source={{ uri: data.imgSmall }} />
+      <Text style={styles.text}>{data.name}</Text>
+      <Text style={styles.price}>Starts from {data.sizes[0].price} manat</Text>
     </View>
   );
 };
@@ -33,6 +28,8 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     fontWeight: 'bold',
     fontSize: 16,
+    flex: 1,
+    textAlign: 'left',
     // textAlign: 'center',
   },
   price: {
