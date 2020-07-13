@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Pepperoni",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2Frecipes%2Fck%2Fgluten-free-cookbook%2Fpepperoni-pizza-ck-x.jpg",
     "imgBig": "https://www.seriouseats.com/recipes/images/2016/05/20160503-spicy-spring-pizza-recipe-37.jpg",
     "sizes": [
@@ -54,6 +55,7 @@
   {
     "id": 2,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [
@@ -106,6 +108,7 @@
   {
     "id": 3,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [
@@ -158,6 +161,7 @@
   {
     "id": 4,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [
@@ -210,6 +214,7 @@
   {
     "id": 4,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [
@@ -262,6 +267,7 @@
   {
     "id": 4,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [
@@ -314,6 +320,7 @@
   {
     "id": 4,
     "name": "Hawaiian Pizza",
+    "info": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem. Cras vitae venenatis.",
     "imgSmall": "https://cdn.shopify.com/s/files/1/0010/8304/7994/products/GF-Hawaiian_300x300.png",
     "imgBig": "https://www.bakedbyrachel.com/wp-content/uploads/adthrive/2014/12/hawaiianpizza1_bakedbyrachel-480x720.jpg",
     "sizes": [

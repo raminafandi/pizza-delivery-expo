@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   ImageBackground,
+  FlatList,
 } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
@@ -27,7 +28,7 @@ const DetailsScreen = ({ navigation }) => {
             borderBottomRightRadius: 20,
           }}
           source={{
-            uri: 'https://wallpaperaccess.com/full/1184035.jpg',
+            uri: navigation.getParam('imgBig'),
           }}>
           <Ionicons
             name="ios-arrow-round-back"
@@ -36,17 +37,16 @@ const DetailsScreen = ({ navigation }) => {
             onPress={pressHandler}
           />
         </ImageBackground>
-        <Text style={styles.pizzaName}>How you doin? Pizza</Text>
-        <Text style={styles.pizzaInfo}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus
-          est a quam tristique, sed rutrum nunc posuere. Donec in mauris lorem.
-          Cras vitae venenatis.
-        </Text>
+        <Text style={styles.pizzaName}>{navigation.getParam('name')}</Text>
+        <Text style={styles.pizzaInfo}>{navigation.getParam('info')}</Text>
         <View>
-          <ChoiceList />
-          <ChoiceList />
-          <ChoiceList />
-          <ChoiceList />
+          <ChoiceList navigation={navigation} title="Sizes" navparam="sizes" />
+          <ChoiceList navigation={navigation} title="Crust" navparam="crust" />
+          <ChoiceList
+            navigation={navigation}
+            title="Toppings"
+            navparam="toppings"
+          />
         </View>
       </View>
     </ScrollView>
@@ -55,6 +55,7 @@ const DetailsScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
+    height: 800,
     backgroundColor: 'white',
     flex: 1,
     flexDirection: 'row',
@@ -74,6 +75,7 @@ const styles = StyleSheet.create({
     height: 380,
   },
   pizzaName: {
+    marginTop: 20,
     fontSize: 20,
     fontWeight: 'bold',
     marginLeft: 20,

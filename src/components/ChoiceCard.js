@@ -2,28 +2,35 @@ import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const ChoiceCard = () => {
+const ChoiceCard = ({ item }) => {
+  console.log(item);
+  if (item.price === 0) {
+    item.price = 'Free';
+  }
   return (
     <TouchableOpacity>
       <View style={styles.container}>
-        <Text style={styles.text}>Standard</Text>
-        <Text style={styles.price}>450$</Text>
+        <Text style={styles.text}>{item.name}</Text>
+        <Text style={styles.price}>{item.price}</Text>
       </View>
     </TouchableOpacity>
   );
 };
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    //   flex: 2,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    padding: 18,
+    paddingHorizontal: 5,
     paddingTop: 5,
     paddingBottom: 5,
     borderWidth: 1,
     borderColor: 'red',
-    justifyContent: 'space-evenly',
-    marginRight: '3%',
+    borderRadius: 5,
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    width: 120,
+    // marginRight: 0,
   },
   text: {
     fontWeight: 'bold',

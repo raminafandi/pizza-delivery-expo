@@ -5,31 +5,29 @@ import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
 import ChoiceCard from '../components/ChoiceCard';
 import InfoCard from './InfoCard';
 
-const ChoiceList = () => {
+const ChoiceList = ({ navigation, title, navparam }) => {
   return (
-    <FlatList horizontal>
-      {/* <View>
-        <Text style={styles.header}>Sizes</Text>
-      </View> */}
-      <View style={styles.choices}>
-        <InfoCard />
-      </View>
-      {/* </View> */}
-    </FlatList>
+    <View>
+      <Text style={styles.header}>{title}</Text>
+      <FlatList
+        horizontal
+        data={navigation.getParam(navparam)}
+        keyExtractor={(item, index) => item.name}
+        renderItem={({ item }) => (
+          <View style={styles.container}>
+            <ChoiceCard item={item} />
+          </View>
+        )}
+      />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     marginTop: 5,
-  },
-  choices: {
-    flex: 3,
-    flexDirection: 'row',
-    marginHorizontal: 20,
-    alignItems: 'flex-start',
-    marginVertical: 8,
-    justifyContent: 'space-between',
+    marginLeft: 20,
+    marginVertical: 20,
   },
   header: {
     fontSize: 17,
