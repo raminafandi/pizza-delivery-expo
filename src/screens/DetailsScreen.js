@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
-
+import { SimpleLineIcons } from '@expo/vector-icons';
 import ChoiceList from '../components/ChoiceList';
 
 const DetailsScreen = ({ navigation }) => {
@@ -30,12 +30,20 @@ const DetailsScreen = ({ navigation }) => {
           source={{
             uri: navigation.getParam('imgBig'),
           }}>
-          <Ionicons
-            name="ios-arrow-round-back"
-            size={50}
-            style={styles.goBackIcon}
-            onPress={pressHandler}
-          />
+          <View>
+            <Ionicons
+              name="ios-arrow-round-back"
+              size={50}
+              style={styles.goBackIcon}
+              onPress={pressHandler}
+            />
+            <SimpleLineIcons
+              name="basket"
+              style={styles.addToCardIcon}
+              size={40}
+              color="white"
+            />
+          </View>
         </ImageBackground>
         <Text style={styles.pizzaName}>{navigation.getParam('name')}</Text>
         <Text style={styles.pizzaInfo}>{navigation.getParam('info')}</Text>
@@ -48,6 +56,9 @@ const DetailsScreen = ({ navigation }) => {
             navparam="toppings"
           />
         </View>
+        <View style={styles.buttonView}>
+          {/* <Button title="Add to Card" /> */}
+        </View>
       </View>
     </ScrollView>
   );
@@ -55,7 +66,6 @@ const DetailsScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 800,
     backgroundColor: 'white',
     flex: 1,
     flexDirection: 'row',
@@ -64,12 +74,18 @@ const styles = StyleSheet.create({
   },
   goBackIcon: {
     alignSelf: 'flex-start',
-    position: 'relative',
+    position: 'absolute',
     top: 30,
     left: 10,
     color: 'white',
   },
-
+  addToCardIcon: {
+    alignSelf: 'flex-end',
+    position: 'absolute',
+    top: 33,
+    right: 10,
+    color: 'white',
+  },
   img: {
     width: '100%',
     height: 380,
@@ -85,6 +101,11 @@ const styles = StyleSheet.create({
     color: 'grey',
     marginLeft: 20,
     marginRight: 20,
+  },
+  buttonView: {
+    position: 'absolute',
+    // bottom: 20,
+    width: '100%',
   },
 });
 
