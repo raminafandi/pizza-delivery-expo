@@ -8,7 +8,7 @@ const DeliveryCard = ({}) => {
     <View style={styles.container}>
       <View style={styles.deliveryInfo}>
         <View style={styles.deliveryTextContainer}>
-          <FontAwesome name="map-marker" size={18} color="red" />
+          <FontAwesome name="map-marker" size={13} color="red" />
           <Text style={styles.deliveryText}> DELIVERY</Text>
         </View>
         <Text style={styles.deliveryCity}>Baku, Azerbaijan</Text>
@@ -27,6 +27,7 @@ const DeliveryCard = ({}) => {
 };
 const styles = StyleSheet.create({
   container: {
+    padding: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: 'white',
@@ -41,16 +42,17 @@ const styles = StyleSheet.create({
 
   deliveryText: {
     color: 'red',
+    fontSize: 10,
   },
   deliveryCity: {
-    fontSize: 18,
+    fontSize: 15,
   },
   iconContainer: {
     alignSelf: 'flex-end',
   },
   icon: {
-    width: 40,
-    height: 40,
+    width: 35,
+    height: 35,
   },
 });
 
