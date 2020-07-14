@@ -18,7 +18,7 @@ const HeaderViewAll = ({}) => {
 };
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 20,
+    marginVertical: 8,
     padding: 10,
     // borderWidth: 1,
     // borderColor: 'red',
