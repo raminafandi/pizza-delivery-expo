@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-const HeaderViewAll = ({}) => {
+const HeaderViewAll = ({ title, secTitle }) => {
   return (
     <View style={styles.container}>
       <View style={styles.leftSide}>
-        <Text style={styles.headerText}>Recommended</Text>
-        <Text style={styles.basedOn}>Based on your purchase story</Text>
+        <Text style={styles.headerText}>{title}</Text>
+        <Text style={styles.basedOn}>{secTitle}</Text>
       </View>
       <View style={styles.rightSide}>
         <TouchableOpacity>
