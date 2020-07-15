@@ -5,13 +5,13 @@ import { FlatList } from 'react-native-gesture-handler';
 import ChoiceCard from '../components/ChoiceCard';
 import InfoCard from './InfoCard';
 
-const ChoiceList = ({ navigation, title, navparam }) => {
+const ChoiceList = ({ data, title }) => {
   return (
     <View>
       <Text style={styles.header}>{title}</Text>
       <FlatList
         horizontal
-        data={navigation.getParam(navparam)}
+        data={data}
         keyExtractor={(item, index) => item.name}
         renderItem={({ item }) => (
           <View style={styles.container}>
@@ -26,12 +26,12 @@ const ChoiceList = ({ navigation, title, navparam }) => {
 const styles = StyleSheet.create({
   container: {
     marginTop: 5,
-    marginLeft: 20,
+    marginRight: 20,
     marginVertical: 20,
   },
   header: {
     fontSize: 17,
-    marginLeft: 20,
+    // marginLeft: 20,
   },
 });
 

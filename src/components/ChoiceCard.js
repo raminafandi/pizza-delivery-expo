@@ -4,7 +4,6 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const ChoiceCard = ({ item }) => {
   const [color, setColor] = useState('black');
-  console.log(item);
   if (item.price === 0) {
     item.price = 'Free';
   }

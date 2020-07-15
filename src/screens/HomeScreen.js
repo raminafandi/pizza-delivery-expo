@@ -8,17 +8,18 @@ import MediumInfoCard from '../components/MediumInfoCard';
 import Pizzas from '../data/pizzas.json';
 const DetailsScreen = ({}) => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <DeliveryCard />
       <HeaderViewAll />
       <MediumInfoCard data={Pizzas[0]} />
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '255, 255, 255',
+    paddingTop: 20,
+    backgroundColor: 'white',
     height: '100%',
     flex: 1,
   },

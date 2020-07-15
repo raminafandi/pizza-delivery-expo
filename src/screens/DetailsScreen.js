@@ -47,14 +47,10 @@ const DetailsScreen = ({ navigation }) => {
         </ImageBackground>
         <Text style={styles.pizzaName}>{navigation.getParam('name')}</Text>
         <Text style={styles.pizzaInfo}>{navigation.getParam('info')}</Text>
-        <View>
-          <ChoiceList navigation={navigation} title="Sizes" navparam="sizes" />
-          <ChoiceList navigation={navigation} title="Crust" navparam="crust" />
-          <ChoiceList
-            navigation={navigation}
-            title="Toppings"
-            navparam="toppings"
-          />
+        <View style={styles.lists}>
+          <ChoiceList data={navigation.getParam('sizes')} title="Sizes" />
+          <ChoiceList data={navigation.getParam('crust')} title="Crust" />
+          <ChoiceList data={navigation.getParam('toppings')} title="Toppings" />
         </View>
         <View style={styles.buttonView}>
           {/* <Button title="Add to Card" /> */}
@@ -85,6 +81,9 @@ const styles = StyleSheet.create({
     top: 33,
     right: 10,
     color: 'white',
+  },
+  lists: {
+    marginLeft: 20,
   },
   img: {
     width: '100%',

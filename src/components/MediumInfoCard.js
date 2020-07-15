@@ -3,6 +3,8 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { FontAwesome } from '@expo/vector-icons';
 import Stars from 'react-native-stars';
+import ChoiceList from './ChoiceList';
+import { Button } from 'react-native-elements';
 
 const MediumInfoCard = ({ data }) => {
   return (
@@ -21,17 +23,38 @@ const MediumInfoCard = ({ data }) => {
           display={4}
           spacing={8}
           count={5}
-          starSize={20}
+          starSize={14}
           fullStar={require('../images/starFilled.png')}
           emptyStar={require('../images/starEmpty.png')}
         />
+      </View>
+      <View style={styles.list}>
+        <ChoiceList data={data.sizes} title="Sizes" />
+      </View>
+      <View style={styles.buttons}>
+        <View>
+          <Button
+            titleStyle={{ color: 'black', fontSize: 13 }}
+            buttonStyle={styles.customizeBtn}
+            color="#e5e5e5"
+            title="Customize & Add"
+          />
+        </View>
+        <View>
+          <Button
+            titleStyle={{ color: 'white', fontSize: 13 }}
+            color="red"
+            title="Add To Card"
+            buttonStyle={styles.addBtn}
+          />
+        </View>
       </View>
     </View>
   );
 };
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
+    marginHorizontal: 15,
     backgroundColor: 'white',
     padding: 20,
     flex: 1,
@@ -58,13 +81,26 @@ const styles = StyleSheet.create({
   },
   imgView: {
     flexDirection: 'row',
-    height: 200,
+    height: 230,
   },
   star: {
     alignSelf: 'flex-start',
   },
 
-  img: { height: 180, flex: 1, width: null, borderRadius: 15 },
+  img: { height: 210, flex: 1, width: null, borderRadius: 15 },
+  list: {
+    marginLeft: 5,
+  },
+  customizeBtn: {
+    backgroundColor: '#e5e5e5',
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  addBtn: {
+    backgroundColor: 'red',
+    borderRadius: 10,
+    // marginVertical: 10,
+  },
 });
 
 export default MediumInfoCard;
