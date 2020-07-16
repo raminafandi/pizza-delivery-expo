@@ -7,6 +7,7 @@ import MediumInfoCard from '../components/MediumInfoCard';
 
 import Pizzas from '../data/pizzas.json';
 import InfoCardsList from '../components/InfoCardsList';
+import InfoCard from '../components/InfoCard';
 
 const DetailsScreen = ({ navigation }) => {
   return (
@@ -18,17 +19,36 @@ const DetailsScreen = ({ navigation }) => {
       />
       <MediumInfoCard data={Pizzas[0]} />
       <HeaderViewAll title="Menu" secTitle="What is on our menu " />
-      <InfoCardsList data={Pizzas.slice(0, 4)} navigation={navigation} />
+      {/* <InfoCardsList data={Pizzas.slice(0, 4)} navigation={navigation} /> */}
+      <View style={styles.menuContainer}>
+        <View style={styles.infocard1}>
+          <InfoCard data={Pizzas[0]} />
+        </View>
+        <View style={styles.infocard2}>
+          <InfoCard data={Pizzas[1]} />
+        </View>
+      </View>
     </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
+    paddingVertical: 30,
     backgroundColor: 'white',
-    height: '100%',
+    // height: '100%',
     flex: 1,
+  },
+  menuContainer: {
+    // flex: 3,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  infocard1: {
+    alignSelf: 'flex-start',
+  },
+  infocard2: {
+    alignSelf: 'flex-end',
   },
 });
 
