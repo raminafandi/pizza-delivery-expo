@@ -6,9 +6,11 @@ const AccountScreen = ({}) => {
   //     navigation.navigate('Details', {});
   //   };
   return (
+    // <ScrollView>
     <View style={styles.container}>
-      <Text>Card Screen</Text>
+      <Text>Account</Text>
     </View>
+    // </ScrollView>
   );
 };
 

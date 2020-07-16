@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const ChoiceCard = ({ item }) => {
+const ChoiceCard = ({ item, index }) => {
   const [color, setColor] = useState('black');
+  const [select, setSelect] = useState(-1);
+  // console.log(index);
   if (item.price === 0) {
     item.price = 'Free';
   }
   return (
     <TouchableOpacity
       onPress={() => {
-        setColor('red');
+        // setColor('red');
+        setSelect(index);
       }}>
-      <View style={[styles.container, { borderColor: color }]}>
+      <View
+        style={[
+          styles.container,
+          select == index ? { borderColor: 'red' } : { borderColor: 'black' },
+        ]}>
         <Text style={styles.text}>{item.name}</Text>
         <Text style={styles.price}>{item.price}</Text>
       </View>

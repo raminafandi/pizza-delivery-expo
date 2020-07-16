@@ -13,9 +13,9 @@ const ChoiceList = ({ data, title }) => {
         horizontal
         data={data}
         keyExtractor={(item, index) => item.name}
-        renderItem={({ item }) => (
+        renderItem={({ item, index }) => (
           <View style={styles.container}>
-            <ChoiceCard item={item} />
+            <ChoiceCard item={item} index={index} />
           </View>
         )}
       />
