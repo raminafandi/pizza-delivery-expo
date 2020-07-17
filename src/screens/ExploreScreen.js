@@ -10,6 +10,7 @@ import InfoCard from '../components/InfoCard';
 
 import Pizzas from '../data/pizzas.json';
 import InfoCardsList from '../components/InfoCardsList';
+import { FlatList } from 'react-native-gesture-handler';
 
 const ExploreScreen = ({}) => {
   const [search, updateSearch] = useState('');
@@ -29,7 +30,17 @@ const ExploreScreen = ({}) => {
       />
       <HeaderViewAll title="New" secTitle="All new, all different!" />
       <View style={styles.menuContainer}>
-        <InfoCardsList data={Pizzas.slice(0, 4)} />
+        <FlatList
+          horizontal
+          data={Pizzas}
+          keyExtractor={(item, index) => item.id.toString()}
+          renderItem={({ item }) => (
+            <View style={styles.container}>
+              <InfoCard data={item} />
+            </View>
+          )}
+        />
+        {/* <InfoList data={Pizzas.slice(0, 4)} /> */}
       </View>
     </View>
   );
@@ -42,18 +53,7 @@ const styles = StyleSheet.create({
     // height: '100%',
     flex: 1,
   },
-  menuContainer: {
-    // flex: 3,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    // fle
-  },
-  infocard1: {
-    alignSelf: 'flex-start',
-  },
-  infocard2: {
-    alignSelf: 'flex-end',
-  },
+  menuContainer: {},
 });
 
 export default ExploreScreen;
