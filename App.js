@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import MenuScreen from './src/screens/MenuScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
-import CardScreen from './src/screens/ExploreScreen';
+import CardScreen from './src/screens/CardScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
 

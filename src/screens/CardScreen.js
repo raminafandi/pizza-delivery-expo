@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 
-const AccountScreen = ({}) => {
+const CardScreen = ({}) => {
   //   const pressHandler = () => {
   //     navigation.navigate('Details', {});
   //   };
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AccountScreen;
+export default CardScreen;

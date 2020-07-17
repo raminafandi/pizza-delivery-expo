@@ -28,16 +28,8 @@ const ExploreScreen = ({}) => {
         lightTheme
       />
       <HeaderViewAll title="New" secTitle="All new, all different!" />
-      <View>
-        <InfoCardsList data={Pizzas.slice(0, 4)} />
-      </View>
       <View style={styles.menuContainer}>
-        <View style={styles.infocard1}>
-          <InfoCard data={Pizzas[0]} />
-        </View>
-        <View style={styles.infocard2}>
-          <InfoCard data={Pizzas[1]} />
-        </View>
+        <InfoCardsList data={Pizzas.slice(0, 4)} />
       </View>
     </View>
   );
@@ -50,7 +42,7 @@ const styles = StyleSheet.create({
     // height: '100%',
     flex: 1,
   },
-  Container: {
+  menuContainer: {
     // flex: 3,
     flexDirection: 'row',
     flexWrap: 'wrap',
