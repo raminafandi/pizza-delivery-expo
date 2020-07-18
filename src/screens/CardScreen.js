@@ -1,24 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 
+import ItemAddedToCart from '../components/ItemAddedToCart';
+import { FlatList } from 'react-native-gesture-handler';
+
+import Pizzas from '../data/pizzas.json';
+
 const CardScreen = ({}) => {
-  //   const pressHandler = () => {
-  //     navigation.navigate('Details', {});
-  //   };
   return (
-    <View style={styles.container}>
-      <Text>Card Screen</Text>
-    </View>
+    <ScrollView style={styles.container}>
+      {/* <FlatList data={} /> */}
+      <ItemAddedToCart data={Pizzas[0]} />
+      <ItemAddedToCart data={Pizzas[1]} />
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
     backgroundColor: 'white',
     flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
   },
 });
 
