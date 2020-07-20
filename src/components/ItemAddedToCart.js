@@ -15,6 +15,8 @@ const ItemAddedToCart = ({ data }) => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
+    paddingHorizontal: 10,
+    marginBottom: 10,
     // flex: 3,
     flexDirection: 'row',
     // shadowColor: '#000',

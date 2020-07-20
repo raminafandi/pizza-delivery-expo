@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import MenuScreen from './src/screens/MenuScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
-import CardScreen from './src/screens/CardScreen';
+import CartScreen from './src/screens/CartScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
 
@@ -36,10 +36,10 @@ const switchNavigator = createSwitchNavigator({
         ),
       },
     },
-    Card: {
-      screen: CardScreen,
+    Cart: {
+      screen: CartScreen,
       navigationOptions: {
-        tabBarLabel: 'Card',
+        tabBarLabel: 'Cart',
         tabBarIcon: ({}) => (
           <Feather name="shopping-cart" size={24} color="red" />
         ),
