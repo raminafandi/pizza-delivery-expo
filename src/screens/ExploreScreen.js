@@ -3,13 +3,10 @@ import { View, Text, StyleSheet, ScrollView, Button } from 'react-native';
 
 import { SearchBar } from 'react-native-elements';
 
-import DeliveryCard from '../components/DeliveryCard';
 import HeaderViewAll from '../components/HeaderViewAll';
-import MediumInfoCard from '../components/MediumInfoCard';
 import InfoCard from '../components/InfoCard';
 
 import Pizzas from '../data/pizzas.json';
-import InfoCardsList from '../components/InfoCardsList';
 import { FlatList } from 'react-native-gesture-handler';
 
 const ExploreScreen = ({}) => {

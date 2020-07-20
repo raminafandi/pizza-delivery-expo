@@ -10,7 +10,7 @@ import DetailsScreen from './src/screens/DetailsScreen';
 import CartScreen from './src/screens/CartScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
-
+import SignManagementScreen from './src/screens/SignManagementScreen';
 import {
   AntDesign,
   FontAwesome5,
@@ -18,49 +18,49 @@ import {
   Feather,
 } from '@expo/vector-icons';
 
-const switchNavigator = createSwitchNavigator({
-  mainFlow: createBottomTabNavigator({
-    Home: {
-      screen: HomeScreen,
-      navigationOptions: {
-        tabBarLabel: 'Home',
-        tabBarIcon: ({}) => <AntDesign name="home" size={24} color="red" />,
-      },
-    },
-    Explore: {
-      screen: ExploreScreen,
-      navigationOptions: {
-        tabBarLabel: 'Explore',
-        tabBarIcon: ({}) => (
-          <FontAwesome5 name="compass" size={24} color="red" />
-        ),
-      },
-    },
-    Cart: {
-      screen: CartScreen,
-      navigationOptions: {
-        tabBarLabel: 'Cart',
-        tabBarIcon: ({}) => (
-          <Feather name="shopping-cart" size={24} color="red" />
-        ),
-      },
-    },
-    Account: {
-      screen: AccountScreen,
-      navigationOptions: {
-        tabBarLabel: 'Account',
-        tabBarIcon: ({}) => (
-          <FontAwesome name="reorder" size={24} color="red" />
-        ),
-      },
-    },
+// const switchNavigator = createSwitchNavigator({
+//   mainFlow: createBottomTabNavigator({
+//     Home: {
+//       screen: HomeScreen,
+//       navigationOptions: {
+//         tabBarLabel: 'Home',
+//         tabBarIcon: ({}) => <AntDesign name="home" size={24} color="red" />,
+//       },
+//     },
+//     Explore: {
+//       screen: ExploreScreen,
+//       navigationOptions: {
+//         tabBarLabel: 'Explore',
+//         tabBarIcon: ({}) => (
+//           <FontAwesome5 name="compass" size={24} color="red" />
+//         ),
+//       },
+//     },
+//     Cart: {
+//       screen: CartScreen,
+//       navigationOptions: {
+//         tabBarLabel: 'Cart',
+//         tabBarIcon: ({}) => (
+//           <Feather name="shopping-cart" size={24} color="red" />
+//         ),
+//       },
+//     },
+//     Account: {
+//       screen: AccountScreen,
+//       navigationOptions: {
+//         tabBarLabel: 'Account',
+//         tabBarIcon: ({}) => (
+//           <FontAwesome name="reorder" size={24} color="red" />
+//         ),
+//       },
+//     },
 
-    // homeScreenFlow: createStackNavigator({
-    //   TrackList: TrackListScreen,
-    //   TrackDetail: TrackDetailScreen,
-    // }),
-  }),
-});
+//     // homeScreenFlow: createStackNavigator({
+//     //   TrackList: TrackListScreen,
+//     //   TrackDetail: TrackDetailScreen,
+//     // }),
+//   }),
+// });
 
 // const switchNavigator = createStackNavigator(
 //   {
@@ -79,4 +79,7 @@ const switchNavigator = createSwitchNavigator({
 //   }
 // );
 
+const switchNavigator = createStackNavigator({
+  SignManagementScreen: SignManagementScreen,
+});
 export default createAppContainer(switchNavigator);
