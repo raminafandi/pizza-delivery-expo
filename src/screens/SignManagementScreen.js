@@ -29,10 +29,11 @@ const SignManagementScreen = ({}) => {
           data={Datas}
           sliderWidth={sliderWidth}
           itemWidth={itemWidth}
-          // loop
+          loop
           renderItem={({ item }) => (
             <View style={styles}>
               <Image style={styles.image} source={{ uri: item.img }} />
+              <Text style={styles.title}>{item.title}</Text>
             </View>
           )}
         />
