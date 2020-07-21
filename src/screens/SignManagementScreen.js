@@ -1,14 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
+
+import Datas from '../data/openingscreen.json';
+
+import Carousel from 'react-native-snap-carousel';
+
+const horizontalMargin = 20;
+const slideWidth = 280;
+
+const sliderWidth = Dimensions.get('window').width;
+const itemWidth = slideWidth + horizontalMargin * 2;
 
 import { Button } from 'react-native-elements';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const SignManagementScreen = ({}) => {
   return (
     <View style={styles.container}>
       <View style={styles.carousel}>
-        <Text>Carousel View Thing</Text>
+        <Carousel
+          data={Datas}
+          sliderWidth={sliderWidth}
+          itemWidth={itemWidth}
+          // loop
+          renderItem={({ item }) => (
+            <View style={styles}>
+              <Image style={styles.image} source={{ uri: item.img }} />
+            </View>
+          )}
+        />
       </View>
       <View style={styles.bottomPart}>
         <Button
@@ -25,7 +52,7 @@ const SignManagementScreen = ({}) => {
         <Button
           titleStyle={{ color: 'white', fontSize: 13 }}
           buttonStyle={[styles.customizeBtn, { backgroundColor: '#F4B400' }]}
-          title="Sign Up with Google"
+          title="Sign Up with Email"
         />
         <View style={styles.loginContainer}>
           <Text style={{ color: 'grey' }}>Existing User ?</Text>
@@ -40,11 +67,11 @@ const SignManagementScreen = ({}) => {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
     backgroundColor: 'white',
     flex: 1,
   },
   carousel: {
-    backgroundColor: 'red',
     height: '60%',
   },
   bottomPart: {
@@ -60,6 +87,12 @@ const styles = StyleSheet.create({
     marginHorizontal: 40,
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+
+  image: {
+    width: 320,
+    height: 350,
+    borderRadius: 25,
   },
 });
 

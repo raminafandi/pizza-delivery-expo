@@ -80,6 +80,12 @@ import {
 // );
 
 const switchNavigator = createStackNavigator({
-  SignManagementScreen: SignManagementScreen,
+  SignManagementScreen: {
+    screen: SignManagementScreen,
+
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
 });
 export default createAppContainer(switchNavigator);
