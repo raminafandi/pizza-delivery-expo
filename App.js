@@ -11,6 +11,8 @@ import CartScreen from './src/screens/CartScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
 import SignManagementScreen from './src/screens/SignManagementScreen';
+import SignUpScreen from './src/screens/SignupScreen';
+
 import {
   AntDesign,
   FontAwesome5,
@@ -80,8 +82,11 @@ import {
 // );
 
 const switchNavigator = createStackNavigator({
-  SignManagementScreen: {
-    screen: SignManagementScreen,
+  // SignManagementScreen: {
+  //   screen: SignManagementScreen,
+
+  SignUpScreen: {
+    screen: SignUpScreen,
 
     navigationOptions: {
       headerShown: false,
