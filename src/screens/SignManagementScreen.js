@@ -34,6 +34,7 @@ const SignManagementScreen = ({}) => {
             <View style={styles}>
               <Image style={styles.image} source={{ uri: item.img }} />
               <Text style={styles.title}>{item.title}</Text>
+              <Text style={styles.info}>{item.info}</Text>
             </View>
           )}
         />
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   carousel: {
-    height: '60%',
+    height: '65%',
   },
   bottomPart: {
     marginTop: 20,
@@ -92,8 +93,19 @@ const styles = StyleSheet.create({
 
   image: {
     width: 320,
-    height: 350,
+    height: 320,
     borderRadius: 25,
+  },
+  title: {
+    marginVertical: 13,
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  info: {
+    textAlign: 'justify',
+    fontSize: 13,
+    color: 'grey',
   },
 });
 
