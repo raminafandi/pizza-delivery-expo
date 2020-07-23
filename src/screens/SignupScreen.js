@@ -1,36 +1,76 @@
-import React, { useContext } from 'react';
-import { View, StyleSheet } from 'react-native';
-import AuthForm from '../components/AuthForm';
-import { NavigationEvents } from 'react-navigation';
+import React, { useState } from 'react';
+import { Text, Input, Button } from 'react-native-elements';
+import { StyleSheet, View } from 'react-native';
 
-const SignupScreen = ({ navigation }) => {
+const SignUpScreen = ({}) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConf, setPasswordConf] = useState('');
+
   return (
     <View style={styles.container}>
-      {/* <NavigationEvents onWillBlur={clearErrorMessage} /> */}
-      <AuthForm
-        headerText="Sign Up"
-        // errorMessage={state.errorMessage}
-        submitButtonText="Sign Up"
-        onSubmit={({ email, password }) => signup({ email, password })}
-      />
-      {/* <NavLink
-        routeName="Signin"
-        text="Already have an account? Sign in instead!"
-      /> */}
+      <View style={styles.modal}>
+        <Text h3>Sign Up</Text>
+        <Input
+          label="Full Name"
+          value={name}
+          onChangeText={(newName) => {
+            setName(newName);
+          }}
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
+        <Input
+          label="Email"
+          value={email}
+          onChangeText={(newEmail) => {
+            setEmail(newEmail);
+          }}
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
+        <Input
+          secureTextEntry
+          label="Password"
+          value={password}
+          onChangeText={(newpassword) => {
+            setPassword(newpassword);
+          }}
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
+        <Input
+          secureTextEntry
+          label="Confirm Password"
+          value={passwordConf}
+          onChangeText={(newpassword) => {
+            setPasswordConf(newpassword);
+          }}
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
+        <Button
+          titleStyle={{ color: 'white', fontSize: 13 }}
+          buttonStyle={[styles.customizeBtn, { backgroundColor: '#F4B400' }]}
+          title="Sign Up"
+        />
+      </View>
     </View>
   );
 };
 
-SignupScreen.navigationOptions = () => {
-  return {
-    headerShown: false,
-  };
-};
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
+    backgroundColor: 'white',
     flex: 1,
-    justifyContent: 'center',
-    marginBottom: 200,
+  },
+  modal: {
+    margin: 40,
+    borderColor: 'red',
+    borderWidth: 1,
   },
 });
-export default SignupScreen;
+
+export default SignUpScreen;

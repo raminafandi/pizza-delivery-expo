@@ -11,7 +11,7 @@ import CartScreen from './src/screens/CartScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
 import SignManagementScreen from './src/screens/SignManagementScreen';
-import SignUpScreen from './src/screens/SignupScreen';
+import SignUpScreen from './src/screens/SignUpScreen';
 
 import {
   AntDesign,
