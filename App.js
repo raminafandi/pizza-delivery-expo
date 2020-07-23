@@ -12,6 +12,7 @@ import ExploreScreen from './src/screens/ExploreScreen';
 import AccountScreen from './src/screens/AccountScreen';
 import SignManagementScreen from './src/screens/SignManagementScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
+import SignInScreen from './src/screens/SignInScreen';
 
 import {
   AntDesign,
@@ -85,8 +86,11 @@ const switchNavigator = createStackNavigator({
   // SignManagementScreen: {
   //   screen: SignManagementScreen,
 
-  SignUpScreen: {
-    screen: SignUpScreen,
+  SignInScreen: {
+    screen: SignInScreen,
+
+    // SignUpScreen: {
+    //   screen: SignUpScreen,
 
     navigationOptions: {
       headerShown: false,
