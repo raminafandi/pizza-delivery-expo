@@ -4,10 +4,6 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 const ItemAddedToCart = ({ data }) => {
   return (
     <View style={styles.container}>
-      {/* <View style={styles.total}>
-
-      </View>
-       */}
       <View style={{ borderWidth: 1, borderColor: 'green' }}>
         <Image style={styles.img} source={{ uri: data.imgSmall }} />
       </View>
