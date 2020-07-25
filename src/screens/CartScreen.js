@@ -13,7 +13,7 @@ import { FlatList } from 'react-native-gesture-handler';
 
 import Pizzas from '../data/pizzas.json';
 
-const CardScreen = ({}) => {
+const CartScreen = ({}) => {
   return (
     <View style={styles.container}>
       <FlatList
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CardScreen;
+export default CartScreen;

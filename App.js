@@ -21,49 +21,49 @@ import {
   Feather,
 } from '@expo/vector-icons';
 
-// const switchNavigator = createSwitchNavigator({
-//   mainFlow: createBottomTabNavigator({
-//     Home: {
-//       screen: HomeScreen,
-//       navigationOptions: {
-//         tabBarLabel: 'Home',
-//         tabBarIcon: ({}) => <AntDesign name="home" size={24} color="red" />,
-//       },
-//     },
-//     Explore: {
-//       screen: ExploreScreen,
-//       navigationOptions: {
-//         tabBarLabel: 'Explore',
-//         tabBarIcon: ({}) => (
-//           <FontAwesome5 name="compass" size={24} color="red" />
-//         ),
-//       },
-//     },
-//     Cart: {
-//       screen: CartScreen,
-//       navigationOptions: {
-//         tabBarLabel: 'Cart',
-//         tabBarIcon: ({}) => (
-//           <Feather name="shopping-cart" size={24} color="red" />
-//         ),
-//       },
-//     },
-//     Account: {
-//       screen: AccountScreen,
-//       navigationOptions: {
-//         tabBarLabel: 'Account',
-//         tabBarIcon: ({}) => (
-//           <FontAwesome name="reorder" size={24} color="red" />
-//         ),
-//       },
-//     },
+const switchNavigator = createSwitchNavigator({
+  mainFlow: createBottomTabNavigator({
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: {
+        tabBarLabel: 'Home',
+        tabBarIcon: ({}) => <AntDesign name="home" size={24} color="red" />,
+      },
+    },
+    Explore: {
+      screen: ExploreScreen,
+      navigationOptions: {
+        tabBarLabel: 'Explore',
+        tabBarIcon: ({}) => (
+          <FontAwesome5 name="compass" size={24} color="red" />
+        ),
+      },
+    },
+    Cart: {
+      screen: CartScreen,
+      navigationOptions: {
+        tabBarLabel: 'Cart',
+        tabBarIcon: ({}) => (
+          <Feather name="shopping-cart" size={24} color="red" />
+        ),
+      },
+    },
+    Account: {
+      screen: AccountScreen,
+      navigationOptions: {
+        tabBarLabel: 'Account',
+        tabBarIcon: ({}) => (
+          <FontAwesome name="reorder" size={24} color="red" />
+        ),
+      },
+    },
 
-//     // homeScreenFlow: createStackNavigator({
-//     //   TrackList: TrackListScreen,
-//     //   TrackDetail: TrackDetailScreen,
-//     // }),
-//   }),
-// });
+    // homeScreenFlow: createStackNavigator({
+    //   TrackList: TrackListScreen,
+    //   TrackDetail: TrackDetailScreen,
+    // }),
+  }),
+});
 
 // const switchNavigator = createStackNavigator(
 //   {
@@ -82,19 +82,19 @@ import {
 //   }
 // );
 
-const switchNavigator = createStackNavigator({
-  // SignManagementScreen: {
-  //   screen: SignManagementScreen,
+// const switchNavigator = createStackNavigator({
+//   // SignManagementScreen: {
+//   //   screen: SignManagementScreen,
 
-  SignInScreen: {
-    screen: SignInScreen,
+//   SignInScreen: {
+//     screen: SignInScreen,
 
-    // SignUpScreen: {
-    //   screen: SignUpScreen,
+//     // SignUpScreen: {
+//     //   screen: SignUpScreen,
 
-    navigationOptions: {
-      headerShown: false,
-    },
-  },
-});
+//     navigationOptions: {
+//       headerShown: false,
+//     },
+//   },
+// });
 export default createAppContainer(switchNavigator);
