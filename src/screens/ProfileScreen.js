@@ -6,10 +6,15 @@ import {
   ScrollView,
   Button,
   Image,
+  TouchableOpacity,
 } from 'react-native';
 
-import { Feather } from '@expo/vector-icons';
-import { MaterialIcons } from '@expo/vector-icons';
+import {
+  Feather,
+  FontAwesome5,
+  Entypo,
+  MaterialIcons,
+} from '@expo/vector-icons';
 
 const ProfileScreen = ({}) => {
   return (
@@ -38,6 +43,60 @@ const ProfileScreen = ({}) => {
             <Text style={styles.textInfo}>barbara.palvin@gmail.com</Text>
           </View>
         </View>
+      </View>
+      <View style={styles.moneyInfoContainer}>
+        <View style={styles.moneyInfo}>
+          <Text style={styles.moneyText1}>$140.00</Text>
+          <Text style={styles.moneyText2}>Wallet</Text>
+        </View>
+        <View style={styles.moneyInfo}>
+          <Text style={styles.moneyText1}>12</Text>
+          <Text style={styles.moneyText2}>Orders</Text>
+        </View>
+      </View>
+      <View>
+        <TouchableOpacity>
+          <View style={styles.option}>
+            <MaterialIcons name="favorite-border" size={20} color="red" />
+            <Text style={styles.optionText}>Your Favorites</Text>
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.option}>
+            <MaterialIcons name="payment" size={20} color="red" />
+            <Text style={styles.optionText}>Payment</Text>
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.option}>
+            <FontAwesome5 name="user-friends" size={16} color="red" />
+            <Text style={styles.optionText}>Tell Your Friend</Text>
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.option}>
+            <Entypo name="price-tag" size={20} color="red" />
+            <Text style={styles.optionText}>Promotions</Text>
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.option}>
+            <MaterialIcons name="settings" size={20} color="red" />
+            <Text style={styles.optionText}>Settings</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <TouchableOpacity>
+          <View style={styles.logout}>
+            <MaterialIcons name="power-settings-new" size={20} color="blue" />
+            <Text style={styles.logoutText}>Log Out</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
     // </ScrollView>
@@ -84,6 +143,48 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     fontSize: 15,
     color: 'grey',
+  },
+  moneyInfoContainer: {
+    flexDirection: 'row',
+    flex: 1,
+    flexWrap: 'wrap',
+  },
+  moneyInfo: {
+    borderWidth: 1,
+    borderColor: 'silver',
+    width: '50%',
+    padding: 20,
+    alignItems: 'center',
+  },
+  moneyText1: {
+    color: 'red',
+    fontSize: 21,
+  },
+  moneyText2: {
+    color: 'grey',
+  },
+  option: {
+    flexDirection: 'row',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+  },
+  optionText: {
+    paddingLeft: 10,
+    fontSize: 15,
+  },
+  logout: {
+    flexDirection: 'row',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    alignItems: 'center',
+    borderTopWidth: 1,
+    borderColor: 'silver',
+  },
+
+  logoutText: {
+    paddingLeft: 10,
+    fontSize: 15,
+    color: 'blue',
   },
 });
 

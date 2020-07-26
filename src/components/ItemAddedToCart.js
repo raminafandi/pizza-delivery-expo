@@ -22,12 +22,13 @@ const styles = StyleSheet.create({
   container: {
     // width: '100%',
     paddingHorizontal: 10,
+    marginHorizontal: 5,
     marginBottom: 10,
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'red',
+    borderColor: 'silver',
     borderRadius: 40,
   },
   img: {
