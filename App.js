@@ -9,7 +9,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
 import CartScreen from './src/screens/CartScreen';
 import ExploreScreen from './src/screens/ExploreScreen';
-import AccountScreen from './src/screens/AccountScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
 import SignManagementScreen from './src/screens/SignManagementScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 import SignInScreen from './src/screens/SignInScreen';
@@ -48,10 +48,10 @@ const switchNavigator = createSwitchNavigator({
         ),
       },
     },
-    Account: {
-      screen: AccountScreen,
+    Profile: {
+      screen: ProfileScreen,
       navigationOptions: {
-        tabBarLabel: 'Account',
+        tabBarLabel: 'Profile',
         tabBarIcon: ({}) => (
           <FontAwesome name="reorder" size={24} color="red" />
         ),
