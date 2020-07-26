@@ -11,7 +11,7 @@ const CartScreen = ({}) => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={Pizzas.slice(0, 3)}
+        data={Pizzas}
         keyExtractor={(item, index) => item.id.toString()}
         renderItem={({ item }) => <ItemAddedToCart data={item} />}
       />
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     paddingTop: 30,
     backgroundColor: 'white',
     flex: 1,
+    paddingBottom: 50,
   },
   total: {
     flex: 1,

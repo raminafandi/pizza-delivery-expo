@@ -4,7 +4,7 @@ import { View, Image, Text, StyleSheet } from 'react-native';
 const ItemAddedToCart = ({ data }) => {
   return (
     <View style={styles.container}>
-      <View style={{ borderWidth: 1, borderColor: 'green' }}>
+      <View>
         <Image style={styles.img} source={{ uri: data.imgSmall }} />
       </View>
       <View style={styles.textPart}>
@@ -28,11 +28,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'red',
+    borderRadius: 40,
   },
   img: {
     width: 100,
     height: 100,
-    borderRadius: 20,
+    borderRadius: 25,
     alignSelf: 'flex-start',
     // marginBottom: 5,
   },
