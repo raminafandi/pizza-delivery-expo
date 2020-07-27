@@ -7,6 +7,7 @@ import {
   Button,
   Image,
   TouchableOpacity,
+  Share,
 } from 'react-native';
 
 import {
@@ -17,6 +18,25 @@ import {
 } from '@expo/vector-icons';
 
 const ProfileScreen = ({}) => {
+  const onShare = async () => {
+    try {
+      const result = await Share.share({
+        message:
+          'Order your next meal at Pizza Delivery, Discounts for new customers',
+      });
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          // shared with activity type of result.activityType
+        } else {
+          // shared
+        }
+      } else if (result.action === Share.dismissedAction) {
+        // dismissed
+      }
+    } catch (error) {
+      alert(error.message);
+    }
+  };
   return (
     <View style={styles.container}>
       <View style={styles.profileContainer}>
@@ -69,7 +89,7 @@ const ProfileScreen = ({}) => {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onShare}>
           <View style={styles.option}>
             <FontAwesome5 name="user-friends" size={16} color="red" />
             <Text style={styles.optionText}>Tell Your Friend</Text>
@@ -179,6 +199,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopWidth: 1,
     borderColor: 'silver',
+    bottom: 0,
   },
 
   logoutText: {
