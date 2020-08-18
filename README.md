@@ -3,7 +3,7 @@ Pizza Delivery App with Expo(React Native)
 
 
 <p align="center">
-  <img alt="pizza screens" src="https://imgur.com/BNQTeG7" />
+  <img alt="pizza screens" src="https://i.imgur.com/BNQTeG7.png" />
 </p>
 
 ## Install & Build
